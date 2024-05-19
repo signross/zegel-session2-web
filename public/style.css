@@ -1,0 +1,147 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'calibri';
+  }
+  
+  header {
+    background: #f7971e;
+    width: 100%;
+    clear: both;
+    content:'';
+    display: table;
+    margin-bottom: 6em;
+  }
+  
+  .menu {
+    width: 900px;
+    margin: 0 auto;
+  }
+  
+  img {
+    width: 120px;
+    height: 50px;
+    float: left;
+    padding: 8px;
+  
+  }
+  
+  nav {
+    float: right;
+  }
+  
+  nav ul li {
+    list-style: none;
+    margin-left: 75px;
+    padding: 12px 10px;
+    float: left;
+    position: relative;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #444;
+    font-weight: bold;
+  }
+  
+  nav ul li a::before {
+    display: block;
+    content: '';
+    width: 0%;
+    background: #444;
+    height: 5px;
+    top:0;
+    position: absolute;
+    transition: width 0.2s;
+  }
+  
+  nav ul li a:hover::before {
+    width: 100%;
+  }
+
+  .title{
+    text-align: center;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    margin-top: 100px;
+    font-weight: 100;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    height: 430px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+
+.container .card{
+    width: 330px;
+    height: 430px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgb(255, 255, 255);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+    border: 1px rgb(214, 214, 214) solid;
+}
+
+.container .card:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(77, 77, 77, 0.247);
+}
+
+.container .card img{
+    width: 250px;
+    height: 200px;
+}
+
+
+.container .card h4{
+    font-weight: 600;
+    padding: 60px;
+}
+
+.container .card p{
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+
+.precio {
+  color: #f7971e;
+  font-size: 600px;
+  font-weight: 700;
+}
+.bastafrezzer, .comprarahora{
+  color: #f7971e;
+  text-decoration: none;
+}
+.bastafrezzer:hover {
+  transition: 0.4s;
+  color: #000000;
+}
+
+.comprarahora:hover{
+  transition: 0.4s;
+  color: #000000;
+}
+
+.envia{
+    color: #f7971e;
+    padding: 7px;
+    border-radius: 5px ;
+}
+.envia:hover{
+    background-color: wheat;
+}
